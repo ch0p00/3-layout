@@ -1,3 +1,41 @@
 * {
     margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
 }
+
+/* Header */
+.header {
+    background-color: #dcdcdc;
+}
+.wrapper {
+    margin: 0 15%;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo__text, .logo__icon {
+    display: inline-block;
+}
+.logo__icon__link {
+    display: block;
+}
+.logo__icon__image {
+    max-width: 100px;
+    height: auto;
+}
+.logo__text {
+    color: #767676;
+    height: 100px;
+    padding: 0.7vw 0vw 0vw 0.9vw;
+}
+h1.title {
+    font-size: 2vw;
+    letter-spacing: 0.2vw;
+    line-height: 2vw;
+ }
