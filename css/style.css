@@ -3,6 +3,10 @@
     padding: 0;
     font-family: 'PT Sans', sans-serif;
 }
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('/home/user/Desktop/l3/all/fonts/Open_Sans/static/OpenSans_Condensed-Light.ttf') format('truetype');
+}
 
 /* Header */
 .header {
@@ -32,10 +36,26 @@
 .logo__text {
     color: #767676;
     height: 100px;
-    padding: 0.7vw 0vw 0vw 0.9vw;
+    padding: 0.7vw 0 0 0.9vw;
 }
 h1.title {
     font-size: 2vw;
     letter-spacing: 0.2vw;
     line-height: 2vw;
  }
+h2.subtitle {
+    font-size: 1.1vw;
+    padding-top: 0.7vw;
+    font-weight: 100;
+}
+.phone__numbers {
+    margin-top: -3.3vw;
+    margin-right: -2vw;
+}
+.phone__numbers a {
+    font-size: 3vw;
+    letter-spacing: 1px;
+    color: #767676;
+    font-family: "Open Sans Condensed", sans-serif;
+    line-height: 3.3vw;
+}
