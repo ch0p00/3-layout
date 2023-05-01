@@ -44,7 +44,7 @@
 }
 h1.title {
     font-size: 2vw;
-    letter-spacing: 0.2vw;
+    letter-spacing: 0.1vw;
     line-height: 2vw;
  }
 h2.subtitle {
@@ -55,7 +55,7 @@ h2.subtitle {
 @media screen and (max-width: 992px) {
     h1.title {
         font-size: 3vw;
-        letter-spacing: 0.3vw;
+        letter-spacing: 0.2vw;
         line-height: 3vw;
     }
     h2.subtitle {
