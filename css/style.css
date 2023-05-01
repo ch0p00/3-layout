@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: 'Open Sans Condensed';
-    src: url('/home/user/Desktop/l3/all/fonts/Open_Sans/static/OpenSans_Condensed-Light.ttf') format('truetype');
+    src: url('/home/user/Desktop/l3/all1/fonts/Open_Sans/static/OpenSans_Condensed-Light.ttf') format('truetype');
 }
 
 /* Header */
@@ -14,11 +14,12 @@
 }
 .wrapper {
     margin: 0 15%;
-    height: 230px;
+    min-height: 16.5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/* Logo and title */
 .logo {
     display: flex;
     justify-content: center;
@@ -30,12 +31,11 @@
     display: block;
 }
 .logo__icon__image {
-    max-width: 100px;
+    max-width: 100%;
     height: auto;
 }
 .logo__text {
     color: #767676;
-    height: 100px;
     padding: 0.7vw 0 0 0.9vw;
 }
 h1.title {
@@ -48,14 +48,27 @@ h2.subtitle {
     padding-top: 0.7vw;
     font-weight: 100;
 }
-.phone__numbers {
-    margin-top: -3.3vw;
-    margin-right: -2vw;
-}
+/* Phone numbers and Feedback*/
 .phone__numbers a {
     font-size: 3vw;
     letter-spacing: 1px;
     color: #767676;
     font-family: "Open Sans Condensed", sans-serif;
-    line-height: 3.3vw;
+    line-height: 2vw;
+    text-decoration: none;
+    display: block;
+}
+.feedback {
+    display: block;
+    padding-bottom: 3.8vw;
+    padding-top: 1vw;
+}
+.feedback a{
+    font-size: 1.7vw;
+    letter-spacing: 1px;
+    color: #767676;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: dashed;
+    float: right;
 }
