@@ -181,10 +181,13 @@ nav {
         background-color: #777777;
         text-align: center;
     }
-
+    .menu a {
+        font-size: 3vw;
+    }
     .menu.open {
         display: flex;
         flex-direction: column;
+        z-index: 3;
     }
 
     .menu li {
@@ -218,25 +221,45 @@ nav {
 .slider {
     position: relative;
     height: 28.571vw;
-    z-index: -1;
 }
 .slider .slick-arrow {
     position: absolute;
-    top: 50%;
-    z-index: 10;
+    z-index: 2;
     font-size: 0;
     width: 2.5vw;
     height: 4.286vw;
     border: none;
-}
-.slider .slick-arrow.slick-prev{
-    left: 15%;
-    background: url("../img/prev.png") 0 0 / 100% no-repeat;
+    top: 40%;
 }
 .slider .slick-arrow.slick-next{
     right: 15%;
     background: url("../img/next.png") 0 0 / 100% no-repeat;
 }
+.slider .slick-arrow.slick-prev{
+    left: 15%;
+    background: url("../img/prev.png") 0 0 / 100% no-repeat;
+}
 .slide_image {
     width: 100%;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .slider{
+        height: 40vw;
+    }
+    .slide_image {
+        height: 40vw;
+        object-fit: none;
+        object-position: center;
+    }
+}
+@media (max-width: 480px) {
+    .slider{
+        height: 60vw;
+    }
+    .slide_image {
+        height: 60vw;
+        object-fit: none;
+        object-position: center;
+    }
 }
