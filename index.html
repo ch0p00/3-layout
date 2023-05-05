@@ -13,6 +13,7 @@
     <title>Layout 3</title>
 </head>
 <body>
+<div class="page">
 <!--Header-->
     <header class="header">
         <div class="wrapper container">
@@ -40,7 +41,8 @@
             </div>
         </div>
     </header>
-<!-- Menu -->
+<main>
+    <!-- Menu -->
     <nav>
         <div class="burger-menu">
             <div class="burger"></div>
@@ -65,7 +67,7 @@
         </div>
     </div>
 <!-- Content -->
-    <main class="content">
+    <div class="content">
         <div class="wrapper">
         <!-- Breadcrumbs-->
             <div class="content__breadcrumbs">
@@ -126,8 +128,10 @@
                 </ul>
         <!-- Price-list block -->
                 <div class="price_list">
+                    <a href="#">
                     <img src="img/price_list.png" alt="Price List">
                     <p>Прайс-ліст</p>
+                    </a>
                 </div>
             </div>
                 <!-- Centerblock -->
@@ -185,7 +189,7 @@
                     </div>
                 </div>
                 <div class="centerblock__pages">
-                    <p>1 2 <span>3</span> 4 5 6</p>
+                    <p><span>1</span> <span>2</span> <span>3</span> <span>4</span> <span>5</span> <span>6</span></p>
                 </div>
                 <div class="centerblock__text">
                     <p>
@@ -198,12 +202,32 @@
             </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
+<footer>
+    <div class="footer__container wrapper">
+        <div class="footer__info1">© 2012–2013 ЗАО «Компанія»
+            <a href="mailto:info@name.ua">info@name.ua</a></div>
+        <div class="footer__menu">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">Доставка и оплата</a>
+            <a href="#">Прайс-лист</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="footer__info2">
+            <img src="img/footer_logo.png" alt="Footer logo">
+            <p><span>Разработка сайта </span>— <br>
+                компания «Пиксель Плюс»</p>
+        </div>
+    </div>
 
-
+</footer>
+</div>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
