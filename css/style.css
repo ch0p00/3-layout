@@ -498,9 +498,9 @@ footer {
     height: 40px;
     width: auto;
 }
-.footer__info2 a{
-    color: #ffffff
+.footer__info2 span{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .footer__menu {
