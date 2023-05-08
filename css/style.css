@@ -47,10 +47,18 @@ main {
     .container {
         height: 150px;
     }
-.logo__icon__image {
+    .logo__icon__image {
     width: 15vw;
-    height: auto;
+    height: auto;}
 }
+@media screen and (max-width: 480px) {
+    .container {
+        height: 120px;
+    }
+    .logo__icon__image {
+        width: 20vw;
+        height: auto;
+    }
 }
 /* Logo and title */
 .logo {
@@ -86,6 +94,19 @@ h2.logo__text__subtitle {
     h2.logo__text__subtitle {
         font-size: 2vw;
         padding-top: 1vw;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1.logo__text__title {
+        padding-top: 10px;
+        font-size: 3.5vw;
+        letter-spacing: 0.2vw;
+        line-height: 3vw;
+    }
+    h2.logo__text__subtitle {
+        font-size: 2.5vw;
+        padding-top: 1vw;
+        white-space: nowrap;
     }
 }
 /* Phone numbers and Feedback*/
@@ -130,6 +151,7 @@ h2.logo__text__subtitle {
         font-size: 3.8vw;
         letter-spacing: 2px;
         line-height: 0.2vw;
+        white-space: nowrap;
     }
     .contacts__feedback #feedback-btn{
         font-size: 2vw;
@@ -386,7 +408,12 @@ nav {
         transform: rotate(-45deg) translate(1vw, -1vw);
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 549px) {
+    .menu {
+        top: 19%;
+    }
+}
+@media screen and (max-width: 413px) {
     .menu {
         top: 18%;
     }
@@ -536,6 +563,9 @@ nav {
     }
 }
 @media (max-width: 860px) {
+    .centerblock__items {
+        justify-content: center;
+    }
     .content__centerblock {
         justify-content: center;
     }
@@ -666,12 +696,19 @@ footer {
     width: 20%;
 }
 @media (max-width: 768px) {
-    footer{
+    footer {
         height: fit-content;
     }
+
     .footer__container {
         flex-direction: column;
     }
+
+    .footer__container * {
+        width: fit-content;
+        align-self: center;
+    }
+
     .footer__info1, .footer__menu {
         margin-bottom: 20px;
         width: 50%;
