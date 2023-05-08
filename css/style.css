@@ -666,6 +666,9 @@ footer {
     width: 20%;
 }
 @media (max-width: 768px) {
+    footer{
+        height: fit-content;
+    }
     .footer__container {
         flex-direction: column;
     }
