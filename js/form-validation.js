@@ -1,6 +1,6 @@
 $.validator.addMethod("phone", function(value, element) {
   return this.optional(element) || /^\d{10}$/.test(value);
-}, "Введіть валідний номер телефону.");
+}, "Please enter a valid phone number.");
 
 $(function() {
   $("form[name='feedback']").validate({
@@ -16,9 +16,18 @@ $(function() {
       }
     },
     messages: {
-      firstname: "Це поле необхідно заповнити",
-      email: "Це поле необхідно заповнити",
-      phone: "Це поле необхідно заповнити"
+      firstname: {
+        required: "Це поле необхідно заповнити",
+        firstname: ""
+      },
+      email: {
+        required: "Це поле необхідно заповнити",
+        email: ""
+      },
+      phone: {
+        required: "Це поле необхідно заповнити",
+        phone: ""
+      }
     },
     submitHandler: function(form) {
       form.submit();
