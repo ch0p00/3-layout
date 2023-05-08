@@ -244,13 +244,13 @@ form .error {
   position: absolute;
 }
 #firstname-error {
-  top: 19%;
+  top: 113px;
 }
 #phone-error {
-  top: 32.5%;
+  top: 196px;
 }
 #email-error {
-    top: 46%;
+    top: 278px;
 }
 /*---- Close button -------*/
 #close-btn {
@@ -321,13 +321,13 @@ form .error {
         width: 300px;
     }
     #firstname-error {
-        top: 18%;
+        top: 98px;
     }
     #phone-error {
-        top: 31.5%;
+        top: 171px;
     }
     #email-error {
-        top: 45%;
+        top: 243px;
     }
     /*---- Close button -------*/
     #close-btn {
