@@ -240,13 +240,13 @@ form .error {
     font-weight: 400;
     font-style: italic;
 }
-#firstname-error, #tel-error, #email-error {
+#firstname-error, #phone-error, #email-error {
   position: absolute;
 }
 #firstname-error {
-  top: 18.5%;
+  top: 19%;
 }
-#tel-error {
+#phone-error {
   top: 32.5%;
 }
 #email-error {
@@ -323,7 +323,7 @@ form .error {
     #firstname-error {
         top: 18%;
     }
-    #tel-error {
+    #phone-error {
         top: 31.5%;
     }
     #email-error {
