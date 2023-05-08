@@ -23,15 +23,4 @@ $(document).ready(function() {
     $('#feedback-form').hide();
   });
 
-  // Validation for phone number
-  $('form').submit(function(event) {
-    event.preventDefault();
-    let phone = $('#tel').val();
-    let phonePattern = /^\d{10}$/;
-    if (!phonePattern.test(phone)) {
-      $('#phone-error').html('');
-    } else {
-      $('#phone-error').empty();
-    }
-  });
 });
