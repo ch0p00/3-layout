@@ -168,15 +168,15 @@ h2.logo__text__subtitle {
 }
 @media screen and (max-width: 480px) {
     .contacts__phone-numbers a {
-        font-size: 3.8vw;
+        font-size: 20px;
         letter-spacing: 2px;
         line-height: 0.2vw;
         white-space: nowrap;
     }
     .contacts__feedback #feedback-btn{
-        font-size: 2vw;
+        font-size: 14px;
         letter-spacing: 1px;
-        margin-top: 1vw;
+        margin-top: 10px;
         border-bottom: dashed 1px;
     }
 }
@@ -496,6 +496,24 @@ nav {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
+}
+@media (max-width: 480px) {
+    .slider {
+        width: 100%; /* Set the slider's width to 90% of the viewport width */
+        margin: 0 auto; /* Center the slider horizontally */
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .slide_image {
+        width: 200%; /* Set the image width to 100% to fill the slide container */
+        text-align: center;
+        height: auto; /* Set the image height to auto to maintain aspect ratio */
+        object-fit: cover; /* Crop the sides of the image to fit the container */
+        overflow: hidden;
+        margin: 0 auto; /* Center the image horizontally within the slide container */
+        display: block; /* Make the image a block element */
+    }
 }
 /* ---------------Content---------------- */
 .content__breadcrumbs {
