@@ -22,7 +22,7 @@ main {
 /* Open Sans Condensed */
 @font-face {
     font-family: 'Open Sans Condensed';
-    src: url('/home/user/Desktop/all1/fonts/Open_Sans/static/OpenSans_Condensed-Light.ttf') format('truetype');
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75,300&display=swap');
 }
 /* Header */
 .header {
@@ -30,7 +30,9 @@ main {
     color: #767676;
 }
 .wrapper{
-    margin: 0 15%;
+    max-width: 980px;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 .container {
     height: 210px;
@@ -39,8 +41,14 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        height: 300px;
+    }
+}
 /* Header adaptive */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1070px) {
     .wrapper {
         margin: 0 10%;
     }
@@ -48,15 +56,15 @@ main {
         height: 150px;
     }
     .logo__icon__image {
-    width: 15vw;
+    width: 13vw;
     height: auto;}
 }
 @media screen and (max-width: 480px) {
     .container {
-        height: 120px;
+        height: 170px;
     }
     .logo__icon__image {
-        width: 20vw;
+        width: 80px;
         height: auto;
     }
 }
@@ -72,39 +80,39 @@ main {
     display: block;
 }
 .logo__text {
-    padding: 0.7vw 0 0 0.9vw;
+    padding-left: 0.9vw;
 }
 h1.logo__text__title {
-    font-size: 2vw;
+    font-size: 30px;
     letter-spacing: 0.1vw;
     line-height: 2vw;
  }
 h2.logo__text__subtitle {
-    font-size: 1.1vw;
+    font-size: 16px;
     padding-top: 0.7vw;
     font-weight: 100;
 }
 /* Logo and title adaptive */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1070px) {
     h1.logo__text__title {
-        font-size: 3vw;
+        font-size: 24px;
         letter-spacing: 0.2vw;
         line-height: 3vw;
     }
     h2.logo__text__subtitle {
-        font-size: 2vw;
+        font-size: 14px;
         padding-top: 1vw;
     }
 }
 @media screen and (max-width: 480px) {
     h1.logo__text__title {
         padding-top: 10px;
-        font-size: 3.5vw;
+        font-size: 20px;
         letter-spacing: 0.2vw;
-        line-height: 3vw;
+        line-height: 15px;
     }
     h2.logo__text__subtitle {
-        font-size: 2.5vw;
+        font-size: 12px;
         padding-top: 1vw;
         white-space: nowrap;
     }
@@ -115,10 +123,10 @@ h2.logo__text__subtitle {
     float: right;
 }
 .contacts__phone-numbers a {
-    font-size: 3vw;
+    font-size: 40px;
     letter-spacing: 1px;
     font-family: "Open Sans", sans-serif;
-    line-height: 2vw;
+    line-height: 26px;
     display: block;
     color: #767676;
 }
@@ -128,7 +136,7 @@ h2.logo__text__subtitle {
     padding-top: 1vw;
 }
 .contacts__feedback #feedback-btn{
-    font-size: 1.7vw;
+    font-size: 24px;
     letter-spacing: 1px;
     font-weight: 700;
     border: none;
@@ -138,11 +146,23 @@ h2.logo__text__subtitle {
 }
 @media screen and (max-width: 992px) {
     .contacts__phone-numbers a {
-        font-size: 4vw;
+        font-size: 30px;
         letter-spacing: 3px;
+        white-space: nowrap;
     }
     .contacts__feedback #feedback-btn{
-        font-size: 2.7vw;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .contacts__phone-numbers a {
+        font-size: 25px;
+        letter-spacing: 3px;
+        white-space: nowrap;
+    }
+    .contacts__feedback #feedback-btn{
+        font-size: 18px;
         letter-spacing: 2px;
     }
 }
@@ -158,6 +178,21 @@ h2.logo__text__subtitle {
         letter-spacing: 1px;
         margin-top: 1vw;
         border-bottom: dashed 1px;
+    }
+}
+@media (max-width: 1350px) {
+    .logo, .contacts{
+        margin: 0 30px;
+    }
+}
+@media (max-width: 1250px) {
+    .logo, .contacts{
+        margin: 0 70px;
+    }
+}
+@media (max-width: 1070px) {
+    .logo, .contacts{
+        margin: 0;
     }
 }
 /* ---------- Feedback form ---------------- */
@@ -340,9 +375,13 @@ form .error {
 nav, .menu {
     display: flex;
 }
+.menu-container {
+    background-color: #777777;
+    box-sizing: border-box;
+}
 nav {
     justify-content: center;
-    height: 5.7vw;
+    height: 80px;
     width: 100%;
     align-items: center;
     background-color: #777777;
@@ -364,7 +403,7 @@ nav {
     border-right: #ffffff solid 1px;
 }
 .menu a {
-    font-size: 2.14vw;
+    font-size: 30px;
     letter-spacing: 1px;
     color: #ffffff;
     text-align: center;
@@ -373,20 +412,24 @@ nav {
 .menu a:hover {
     border-bottom: #ffffff solid 2px;
 }
+@media screen and (max-width: 1070px) {
+    .menu a {
+        font-size: 22px;
+        white-space: nowrap;
+    }
+}
 @media screen and (max-width: 768px) {
     nav {
-        height: 8vw;
+        height: 65px;
     }
     .menu {
         display: none;
         position: absolute;
-        top: 220px;
-        width: 100%;
+        top: 235px;
+        left: 0;
+        width: 100vw;
         background-color: #777777;
         text-align: center;
-    }
-    .menu a {
-        font-size: 3vw;
     }
     .menu.open {
         display: flex;
@@ -412,13 +455,14 @@ nav {
 }
 @media screen and (max-width: 549px) {
     .menu {
-        top: 200px;
+        top: 225px;
+    }
+    nav {
+       height: 55px;
     }
 }
 @media screen and (max-width: 482px) {
-    .menu {
-        top: 170px;
-    }
+
 }
 /*---------- Slider ---------------*/
 .slick-track {
@@ -429,7 +473,7 @@ nav {
 }
 .slider {
     position: relative;
-    height: 28.571vw;
+    max-height: 400px;
 }
 .slider .slick-arrow {
     position: absolute;
@@ -450,27 +494,8 @@ nav {
 }
 .slide_image {
     width: 100%;
+    max-height: 400px;
     object-fit: cover;
-}
-@media (max-width: 768px) {
-    .slider{
-        height: 40vw;
-    }
-    .slide_image {
-        height: 40vw;
-        object-fit: none;
-        object-position: center;
-    }
-}
-@media (max-width: 480px) {
-    .slider{
-        height: 60vw;
-    }
-    .slide_image {
-        height: 60vw;
-        object-fit: none;
-        object-position: center;
-    }
 }
 /* ---------------Content---------------- */
 .content__breadcrumbs {
@@ -532,13 +557,18 @@ nav {
     margin: 0 20%;
 }
 .price-list p{
-    font-size: 2.143vw;
+    font-size: 30px;
     letter-spacing: 1px;
     line-height: 25px;
     color: #444444;
     font-weight: 700;
     white-space: nowrap;
     margin: 0 10%;
+}
+@media (max-width: 1070px) {
+    .price-list p{
+        font-size: 20px;
+    }
 }
 /* Centerblock */
 .content__centerblock {
@@ -620,7 +650,7 @@ nav {
 .centerblock__pages {
     text-align: center;
     margin-top: 1.5vw;
-    margin-bottom: 4.2vw;
+    margin-bottom: 30px;
     font-size: 14px;
     letter-spacing: 8px;
     color: #767676;
@@ -635,7 +665,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-top: 1.5vw;
-    margin-bottom: 13.571vw;
+    margin-bottom: 100px;
     border-top: #777777 solid 1px ;
 }
 .centerblock__text p{
